@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch",
-    "build-final": "npm tailwindcss -o ./public/css/style.css --minify"
+    "build-final": "npx tailwindcss -o ./public/css/style.css --minify"
   },
   "keywords": [
     "firefox",
