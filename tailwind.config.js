@@ -2,6 +2,9 @@ module.exports = {
   content: ['./**/*.{html,js}'],
   theme: {
     extend: {
+      fontFamily: {
+        "fantasque": ["Fantasque Sans Mono"]
+      },
       colors: {
         "gruvbox-bg": "#282828", 
         "gruvbox-bg-1/2": "#32302f", 
