@@ -12,7 +12,7 @@ const search = (e) => {
 
 links.forEach((block) => {
   let container = document.createElement("div");
-  container.setAttribute("class", "flex flex-col space-y-4 font-fantasque");
+  container.setAttribute("class", "flex flex-col space-y-2 font-fantasque");
 
   let linksContainer = "";
   block.links.forEach((links) => {
@@ -29,7 +29,7 @@ links.forEach((block) => {
         <span class="text-gruvbox-fg-1">${block.name}</span>
       </div>
       <div
-        class="bg-gruvbox-fg-1 p-1 w-40 h-40 rounded-sm flex flex-col justify-start text-center text-gruvbox-bg-1"
+        class="bg-gruvbox-fg-1 p-1 w-full h-full rounded-sm flex flex-col justify-start text-center text-gruvbox-bg-1"
       >
       ${linksContainer}
       </div>

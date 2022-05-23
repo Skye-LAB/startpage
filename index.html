@@ -13,9 +13,10 @@
     <title>Startpage</title>
   </head>
   <body class="bg-gruvbox-bg-1/2">
-    <div class="h-screen flex flex-col container mx-auto">
+    <div class="hidden bg-gruvbox-red bg-gruvbox-orange bg-gruvbox-aqua bg-gruvbox-blue bg-gruvbox-green"></div>
+    <div class="h-screen flex flex-col py-10 container mx-auto">
       <div class="w-3/4 m-auto flex flex-col space-y-4">
-        <div class="mx-auto w-2/5">
+        <div class="mx-auto w-full max-w-3xl">
           <form onsubmit="search(event)">
             <input
               class="bg-gruvbox-fg-1 text-center rounded-sm w-full px-5 py-2 font-fantasque focus:outline-none focus:ring focus:ring-gruvbox-fg-4"
@@ -28,7 +29,8 @@
             <button type="submit" class="hidden"></button>
           </form>
         </div>
-        <div class="flex flex-row justify-evenly" id="blocks-container"></div>
+        <!-- <div class="flex flex-row justify-evenly" id="blocks-container"></div> -->
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5" id="blocks-container"></div>
       </div>
     </div>
 
