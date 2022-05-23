@@ -1,6 +1,6 @@
 # Showcase
 
-![screenshot](./screenshot.png)
+![screenshot demo](./demo.png)
 
 ## Installation
 
