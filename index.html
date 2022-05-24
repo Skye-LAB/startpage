@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,14 +12,21 @@
     <link href="./public/css/style.css" rel="stylesheet" />
     <title>Startpage</title>
   </head>
-  <body class="bg-gruvbox-bg-1/2">
-    <div class="hidden bg-gruvbox-red bg-gruvbox-orange bg-gruvbox-aqua bg-gruvbox-blue bg-gruvbox-green"></div>
-    <div class="h-screen flex flex-col py-10 container mx-auto">
-      <div class="w-3/4 m-auto flex flex-col space-y-4">
+  <body class="realtive bg-gruvbox-fg-1 dark:bg-gruvbox-bg-1/2">
+    <div
+      class="hidden bg-gruvbox-red bg-gruvbox-orange bg-gruvbox-aqua bg-gruvbox-blue bg-gruvbox-green"
+    ></div>
+    <div class="group absolute top-2 left-2">
+      <input type="checkbox" class="hidden" id="mode-checkbox" />
+      <label for="mode-checkbox" id="mode-icon-container">
+      </label>
+    </div>
+    <div class="container mx-auto flex h-screen flex-col py-10">
+      <div class="m-auto flex w-3/4 flex-col space-y-4">
         <div class="mx-auto w-full max-w-3xl">
           <form onsubmit="search(event)">
             <input
-              class="bg-gruvbox-fg-1 text-center rounded-sm w-full px-5 py-2 font-fantasque focus:outline-none focus:ring focus:ring-gruvbox-fg-4"
+              class="w-full rounded-sm bg-gruvbox-bg-1 px-5 py-2 text-center font-fantasque focus:outline-none focus:ring focus:ring-gruvbox-bg-4 dark:bg-gruvbox-fg-1 dark:focus:ring-gruvbox-fg-4"
               type="text"
               id="search-container"
               placeholder="Search something..."
@@ -30,7 +37,10 @@
           </form>
         </div>
         <!-- <div class="flex flex-row justify-evenly" id="blocks-container"></div> -->
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5" id="blocks-container"></div>
+        <div
+          class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5"
+          id="blocks-container"
+        ></div>
       </div>
     </div>
 
