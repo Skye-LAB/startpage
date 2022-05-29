@@ -12,17 +12,26 @@
     <link href="./public/css/style.css" rel="stylesheet" />
     <title>Startpage</title>
   </head>
-  <body class="realtive bg-gruvbox-fg-1 dark:bg-gruvbox-bg-1/2">
+  <body class="relative bg-gruvbox-fg-1 dark:bg-gruvbox-bg-1/2">
     <div
       class="hidden bg-gruvbox-red bg-gruvbox-orange bg-gruvbox-aqua bg-gruvbox-blue bg-gruvbox-green"
     ></div>
-    <div class="group absolute top-2 left-2">
+
+    <!-- mode -->
+    <div class="group absolute top-2 right-2">
       <input type="checkbox" class="hidden" id="mode-checkbox" />
-      <label for="mode-checkbox" id="mode-icon-container" class="cursor-pointer">
+      <label
+        for="mode-checkbox"
+        id="mode-icon-container"
+        class="cursor-pointer"
+      >
       </label>
     </div>
+    <!-- mode -->
+
     <div class="container mx-auto flex h-screen flex-col py-10">
       <div class="m-auto flex w-3/4 flex-col space-y-4">
+        <!-- seachbox -->
         <div class="mx-auto w-full max-w-3xl">
           <form onsubmit="search(event)">
             <input
@@ -36,15 +45,20 @@
             <button type="submit" class="hidden"></button>
           </form>
         </div>
-        <!-- <div class="flex flex-row justify-evenly" id="blocks-container"></div> -->
+        <!-- seachbox -->
+
+        <!-- block container -->
         <div
           class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5"
           id="blocks-container"
         ></div>
+        <!-- block container -->
       </div>
     </div>
 
     <script type="text/javascript" src="./public/js/links.js"></script>
+    <script type="text/javascript" src="./public/js/dark-mode.js"></script>
+    <script type="text/javascript" src="./public/js/blocks.js"></script>
     <script type="text/javascript" src="./public/js/script.js"></script>
   </body>
 </html>

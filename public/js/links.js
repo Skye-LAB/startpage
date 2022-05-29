@@ -4,7 +4,7 @@ const links = [
     color: "green",
     links: [
       {
-        name: "DistroTube.com",
+        name: "DistroTube",
         link: "https://distro.tube",
       },
       {
