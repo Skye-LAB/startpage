@@ -17,8 +17,26 @@
       class="hidden bg-gruvbox-red bg-gruvbox-orange bg-gruvbox-aqua bg-gruvbox-blue bg-gruvbox-green"
     ></div>
 
+    <!-- sidenav button -->
+    <div id="sidenav-button" class="absolute left-2 top-2 h-6 w-6 z-10 cursor-pointer"></div>
+    <div id="sidenav-button" class="absolute flex left-2 top-2">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 text-gruvbox-fg-1"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <!-- sidenav button -->
+
     <!-- mode -->
-    <div class="group absolute top-2 right-2">
+    <div class="absolute top-2 right-2">
       <input type="checkbox" class="hidden" id="mode-checkbox" />
       <label
         for="mode-checkbox"
@@ -28,6 +46,38 @@
       </label>
     </div>
     <!-- mode -->
+
+    <!-- sidenav -->
+    <div
+      id="sidenav"
+      class="absolute z-20 h-screen w-0 overflow-hidden"
+    >
+      <div
+        class="top-0 bottom-0 h-screen w-[200px] overflow-y-auto bg-gruvbox-bg-3 font-fantasque sm:w-[300px]"
+      >
+        <div class="">
+          <div class="m-2">
+            <div
+              class="flex items-center justify-center rounded-sm bg-gruvbox-orange"
+            >
+              <span class="text-gruvbox-fg-1">Search Block</span>
+            </div>
+          </div>
+          <div class="m-2 flex items-center justify-center space-x-2">
+            <div class="h-10 w-10 rounded-sm bg-gruvbox-fg-1">
+              <img src="./public/img/google.png" alt="google" />
+            </div>
+            <div class="h-10 w-10 rounded-sm bg-gruvbox-fg-1">
+              <img src="./public/img/duckduckgo.png" alt="duckduckgo" />
+            </div>
+            <div class="h-10 w-10 rounded-sm bg-gruvbox-fg-1">
+              <img src="./public/img/brave.png" alt="duckduckgo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sidenav -->
 
     <div class="container mx-auto flex h-screen flex-col py-10">
       <div class="m-auto flex w-3/4 flex-col space-y-4">
@@ -59,6 +109,7 @@
     <script type="text/javascript" src="./public/js/links.js"></script>
     <script type="text/javascript" src="./public/js/dark-mode.js"></script>
     <script type="text/javascript" src="./public/js/blocks.js"></script>
+    <script type="text/javascript" src="./public/js/sidenav.js"></script>
     <script type="text/javascript" src="./public/js/script.js"></script>
   </body>
 </html>
